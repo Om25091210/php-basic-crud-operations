@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+    <h2>Student Form</h2>
+    <form method="post" action="save_data.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender_male" name="gender" value="Male" required>
+        <label for="gender_male">Male</label>
+        <input type="radio" id="gender_female" name="gender" value="Female" required>
+        <label for="gender_female">Female</label><br><br>
+
+        <label for="education">Education:</label>
+        <select id="education" name="education" required>
+            <option value="">Select</option>
+            <option value="High School">High School</option>
+            <option value="College">College</option>
+            <option value="University">University</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
